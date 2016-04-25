@@ -1,0 +1,8 @@
+use_frameworks!
+
+
+target 'RxAssert_Tests', :exclusive => true do
+  pod 'RxAssert', :path => '../'
+
+  
+end
