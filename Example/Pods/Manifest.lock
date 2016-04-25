@@ -1,0 +1,21 @@
+PODS:
+  - RxAssert (0.1.0):
+    - RxCocoa (~> 2.0)
+    - RxSwift (~> 2.0)
+  - RxCocoa (2.4):
+    - RxSwift (~> 2.4)
+  - RxSwift (2.4)
+
+DEPENDENCIES:
+  - RxAssert (from `../`)
+
+EXTERNAL SOURCES:
+  RxAssert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxAssert: ebe0aaaf32c82c1b75c1fdad24e760d1f899d308
+  RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
+  RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
+
+COCOAPODS: 0.39.0

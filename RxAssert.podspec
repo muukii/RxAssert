@@ -9,32 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = "RxAssert"
   s.version          = "0.1.0"
-  s.summary          = "A short description of RxAssert."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = "Check condition on Stream"
   s.description      = <<-DESC
+                        Check condition on Stream with assert()
                        DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RxAssert"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/RxAssert/RxAssert"
   s.license          = 'MIT'
   s.author           = { "muukii" => "m@muukii.me" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RxAssert.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/muukii/RxAssert.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/muukii0803'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'RxAssert/Classes/**/*'
-  s.resource_bundles = {
-    'RxAssert' => ['RxAssert/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '~> 2.0'
+  s.dependency 'RxCocoa', '~> 2.0'
+  s.frameworks = 'Foundation'
 end
