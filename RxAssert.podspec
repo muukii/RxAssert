@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         Check condition on Stream with assert()
                        DESC
-  s.homepage         = "https://github.com/RxAssert/RxAssert"
+  s.homepage         = "https://github.com/muukii/RxAssert"
   s.license          = 'MIT'
   s.author           = { "muukii" => "m@muukii.me" }
   s.source           = { :git => "https://github.com/muukii/RxAssert.git", :tag => s.version.to_s }
