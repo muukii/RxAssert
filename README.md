@@ -7,7 +7,44 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Check element in Stream
+
+```swift
+extension Observable {
+
+    public func assert(message: String = default, _ condition: (Event<E>) -> Bool) -> RxSwift.Observable<Element>
+
+    public func assertNext(message: String = default, _ condition: (E) -> Bool) -> RxSwift.Observable<Element>
+}
+
+extension Driver {
+
+    public func assert(message: String = default, _ condition: (Event<E>) -> Bool) -> RxCocoa.Driver<Element>
+
+    public func assertNext(message: String = default, _ condition: (E) -> Bool) -> RxCocoa.Driver<Element>
+}
+```
+
+- Sample1
+
+```swift
+name
+  .assertNext("invalid name") { $0 != "muukii" }
+  .subscribe()
+```
+
+- Sample2
+
+```swift
+name
+  .assert("Don't send error") { event in
+    if case .Error = event {
+      return false
+    }
+    return true
+  }
+  .subscribe()
+```
 
 ## Requirements
 
